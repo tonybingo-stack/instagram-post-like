@@ -11,9 +11,13 @@ python main.py <your-username> <your-password> <number-of-post-to-like>
 
 
 ## How to run
-Edit run.bat file with your instagram credentials and the number of posts you want to like.
+make an exe file by running below code
 ```python
 pyinstaller --onefile main.py 
+```
+
+Edit run.bat file with your instagram credentials and the number of posts you want to like.
+```python
 main.exe <your-username> <your-password> <number-of-post-to-like>    
 ```
 Double-click the run.bat file to like the post
