@@ -44,8 +44,8 @@ class LikingBot(object):
         # 1.1) Give the Website time to load; otherwise the following steps wont work
         sleep(3)
 
-        self.driver.find_element(By.XPATH, self.selectors['continue_with_instagram']).click()
-        print("conintue with instagram account")
+        # self.driver.find_element(By.XPATH, self.selectors['continue_with_instagram']).click()
+        # print("conintue with instagram account")
         sleep(2)
         self.driver.find_element(By.XPATH, self.selectors['input_username']).send_keys(username)
         sleep(1)
