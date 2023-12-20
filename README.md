@@ -2,6 +2,14 @@
 
 Like post in threads.net. Work with Python 3.7.2 and Selenium.
 
+## How to install
+Install neccessary dependencies by running 
+```python
+pip install -r requirements.txt
+python main.py <your-username> <your-password> <number-of-post-to-like>
+```
+
+
 ## How to run
 Edit run.bat file with your instagram credentials and the number of posts you want to like.
 ```python

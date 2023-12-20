@@ -58,13 +58,15 @@ class LikingBot(object):
         sleep(10)
         try:
             self.driver.find_element(By.XPATH, self.selectors['button_dismiss']).click()
+            print("dismiss button clicked!")
         except:
-            print("dismiss not appear")
+            print("dismiss not appear!")
 
         try:
             self.driver.find_element(By.XPATH, self.selectors['allow_all_cookies']).click()
+            print("Allow cookies button clicked!")
         except:
-            print("allow cookies not appear")
+            print("allow cookies not appear!")
             
 
         sleep(3)
@@ -86,6 +88,7 @@ class LikingBot(object):
             try:
                 like_buttons = WebDriverWait(self.driver, 5).until(EC.presence_of_all_elements_located((By.XPATH, self.selectors['button_like'])))
                 print("length",len(like_buttons))
+                sleep(1)
 
                 for like_button in like_buttons:
                     ActionChains(self.driver).move_to_element(like_button).click().perform()
@@ -97,6 +100,6 @@ class LikingBot(object):
                         break
 
             except:
-                print("Error in liking...")
+                print("Error in liking the posts")
 
             sleep(2)
