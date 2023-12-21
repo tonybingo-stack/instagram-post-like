@@ -47,7 +47,7 @@ cd "$(dirname "$0")"
 ./main username password 10
 ```
 
-Open terminal where the run.bat file exists and give the run.command file to neccessary permission
+Open terminal where the run.command file exists and give the run.command file to neccessary permission
 ```python
 chmod +x ./run.command
 ```
